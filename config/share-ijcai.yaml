@@ -1,0 +1,12 @@
+data:
+  file_name: '../benchmark/ijcai_2015_10core_idx'
+  name: 'ijcai'
+  num_items: 12246
+  data_type: 'mlm_cate'
+  num_cate: 690
+
+  target_b: '2'
+  mb: "{'0': 1, '1': 2, '2': 3, '3': 4}"
+  mask_prob: 0.2
+  mask_bi: "[1, 2, 3, 4]"
+  n_mb: 4

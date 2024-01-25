@@ -1,0 +1,17 @@
+data:
+  file_name: '../benchmark/tencent_5core_idx'
+  name: 'tencent'
+  num_items: 33453  # 25670
+#  n_c: 3846
+  data_type: 'mlm_cate'
+  train_start_dt: '20180201'
+  train_end_dt: '20180413'
+  eval_start_dt: '20180414'
+  eval_end_dt: '20180415'
+  num_cate: 2
+
+  target_b: '3'
+  mb: "{'1': 1, '2': 2, '3': 3, '4': 4}"
+  mask_bi: "[1, 2, 3, 4]"
+  n_mb: 4
+

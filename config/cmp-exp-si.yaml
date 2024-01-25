@@ -1,0 +1,77 @@
+#exp_dan_cate:
+##  data:
+##    n_c2: 1416
+#  train:
+#    exp: '5401'
+#    b_pe: 'da'
+#    b_cate: True
+
+exp_sasrec_dan_cate:
+  data:
+#    n_c2: 1416
+    mask_prob: 1.2
+    data_type: 'sas'
+  train:
+    exp: '5406'
+    b_pe: 'da'
+    b_cate: True
+    causal: True
+
+#
+#exp_sas_dif:
+#  data:
+#    mask_prob: 1.2
+#    data_type: 'sas'
+#  train:
+#    exp: '3313'
+#    b_event: 'dif_sr'
+#    causal: True
+#
+#exp_bert4rec_fusion:
+#  data:
+#    mask_prob: 1.2
+#    data_type: 'sas'
+#  train:
+#    exp: '3314'
+#    b_event: 'fusion-add'
+#    causal: True
+#
+#exp_bert4rec_nova:
+#  data:
+#    mask_prob: 1.2
+#    data_type: 'sas'
+#  train:
+#    exp: '3315'
+#    b_event: 'nova'
+#    causal: True
+#
+#
+#exp_sas_dif_cate:
+#  data:
+#    mask_prob: 1.2
+#    data_type: 'sas'
+#  train:
+#    exp: '3412'
+#    b_event: 'dif_sr'
+#    causal: True
+#    b_cate: True
+#
+#exp_sas_fusion_cate:
+#  data:
+#    mask_prob: 1.2
+#    data_type: 'sas'
+#  train:
+#    exp: '3413'
+#    b_event: 'fusion-add'
+#    causal: True
+#    b_cate: True
+#
+#exp_sas_nova_cate:
+#  data:
+#    mask_prob: 1.2
+#    data_type: 'sas'
+#  train:
+#    exp: '3414'
+#    b_event: 'nova'
+#    causal: True
+#    b_cate: True

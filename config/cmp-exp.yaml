@@ -1,0 +1,101 @@
+# 和单行为算法的对比; 和单行为+事件类型的对比
+exp_bert4rec:
+  train:
+    exp: '3301'
+    b_pe: 'raw'
+
+exp_dan:
+  train:
+    exp: '3302'
+    b_pe: 'da'
+
+exp_bert4rec_dif:
+  train:
+    exp: '3303'
+    b_event: 'dif_sr'
+
+exp_bert4rec_fusion:
+  train:
+    exp: '3304'
+    b_event: 'fusion-add'
+
+exp_bert4rec_nova:
+  train:
+    exp: '3305'
+    b_event: 'nova'
+
+exp_sasrec:
+  data:
+    mask_prob: 1.2
+    data_type: 'sas'
+  train:
+    exp: '3306'
+    b_pe: 'raw'
+    causal: True
+
+exp_mbstr:
+  train:
+    exp: '3307'
+    b_qkv: True
+    b_ff: True
+    b_head: True
+    b_value: True
+    b_pe: 'pos'
+    n_e_sh: 3
+    n_e_sp: 1
+
+exp_sasrec_dan:
+  data:
+    mask_prob: 1.2
+    data_type: 'sas'
+  train:
+    exp: '3308'
+    b_pe: 'da'
+    causal: True
+
+# +品类属性：和单行为+属性算法的对比
+exp_dan_cate:
+  train:
+    exp: '3401'
+    b_pe: 'da'
+    b_cate: True
+
+exp_bert4rec_dif_cate:
+  train:
+    exp: '3402'
+    b_event: 'dif_sr'
+    b_cate: True
+
+exp_bert4rec_fusion_cate:
+  train:
+    exp: '3403'
+    b_event: 'fusion-add'
+    b_cate: True
+
+exp_bert4rec_nova_cate:
+  train:
+    exp: '3404'
+    b_event: 'nova'
+    b_cate: True
+
+exp_mbstr_cate:
+  train:
+    exp: '3405'
+    b_qkv: True
+    b_ff: True
+    b_head: True
+    b_value: True
+    b_pe: 'pos'
+    b_cate: True
+    n_e_sh: 3
+    n_e_sp: 1
+
+exp_sasrec_dan_cate:
+  data:
+    mask_prob: 1.2
+    data_type: 'sas'
+  train:
+    exp: '3406'
+    b_pe: 'da'
+    b_cate: True
+    causal: True

@@ -1,0 +1,47 @@
+data:
+  file_name: '../benchmark/retail'
+  name: 'retail'
+  seq_len: 200
+  target_b: 'buy'
+  data_type: 'mlm'
+  mb: "{'pv': 1, 'fav': 2, 'cart': 3, 'buy': 4}"
+  mask_prob: 0.2
+  mask_bi: "[1, 2, 3, 4]"
+  num_items: 99037
+  n_mb: 4
+  debug: False
+  buffer_size: 80000
+  train_start_dt: '20171125'
+  train_end_dt: '20171202'
+  eval_start_dt: '20171203'
+  eval_end_dt: '20171203'
+
+
+train:
+  exp: '0201'
+  model_name: 'mbStr'
+  epochs: 50
+  batch_size: 128
+  num_hidden_layers: 4
+  num_attention_heads: 4
+  size_per_head: 32
+  patience: 3
+  skip: False
+  n_e_sh: 0
+  n_e_sp: 0
+
+#  b_qkv: True
+#  b_ff: True
+#  b_head: True
+#  b_value: True
+#  b_pe: 'da'
+#  n_moe: 4
+#  b_rp: True
+#  b_sess: True
+#  mb_moe: True
+#  n_gate: 3
+#  b_event: 'cate'
+#  causal: True
+#  b_gate: True
+  train_t0_t1: 'T0'
+  eval_t0_t1: 'T0'

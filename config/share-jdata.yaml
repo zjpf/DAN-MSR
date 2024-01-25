@@ -1,0 +1,20 @@
+data:
+  file_name: '../benchmark/jdata_5core_idx_v2'
+  name: 'jdata'
+  num_items: 19898  # 25670
+#  n_c: 3846
+  data_type: 'mlm_cate'
+  train_start_dt: '20180201'
+  train_end_dt: '20180413'
+  eval_start_dt: '20180414'
+  eval_end_dt: '20180415'
+  num_cate: 81
+
+  target_b: '2'
+  mb: "{'1': 1, '2': 2, '3': 3, '4': 4, '5': 5}"
+  mask_bi: "[1, 2, 3, 4, 5]"
+  n_mb: 5
+
+#train:
+#  b_cate: False #True
+#  b_pe: 'pos'

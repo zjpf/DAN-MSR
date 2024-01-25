@@ -1,0 +1,19 @@
+data:
+  file_name: '../benchmark/ml25_5core_idx'
+  name: 'ml25'
+  num_items: 15407
+#  n_c: 3846
+  data_type: 'mlm_cate'
+  num_cate: 0
+
+  target_b: 'pos'
+  mb: "{'neg': 1, 'mid': 2, 'pos': 3, 'tip': 4}"
+  mask_prob: 0.2
+  mask_bi: "[1, 2, 3, 4]"
+  n_mb: 4
+  n_attr: 19
+
+#train:
+#  b_event: 'dif_sr'
+#  b_cate: False #True
+#  b_pe: 'pos'

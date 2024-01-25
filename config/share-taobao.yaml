@@ -1,0 +1,12 @@
+data:
+  file_name: '../benchmark/taobao_5core_v2'
+  name: 'taobao'
+  num_items: 77027  # 108550
+#  n_c: 3846
+  data_type: 'mlm_cate'
+  num_cate: 3312  # 3846
+
+#train:
+#  b_event: 'dif_sr'
+#  b_cate: False #True
+#  b_pe: 'pos'

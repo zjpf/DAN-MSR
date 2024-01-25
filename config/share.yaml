@@ -1,0 +1,8 @@
+data:
+  seq_len: 100
+
+train:
+  epochs: 100
+  num_hidden_layers: 4
+  num_attention_heads: 4
+  size_per_head: 32

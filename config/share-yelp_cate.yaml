@@ -1,0 +1,14 @@
+data:
+  file_name: '../benchmark/yelp_cate_5core_idx'
+  name: 'yelp_cate'
+  num_items: 34474  # 117872
+#  n_c: 3846
+  data_type: 'mlm_cate'
+  num_cate: 1416
+
+  target_b: 'pos'
+  mb: "{'neg': 1, 'mid': 2, 'pos': 3, 'tip': 4}"
+  mask_prob: 0.2
+  mask_bi: "[1, 2, 3, 4]"
+  n_mb: 4
+  n_attr: 1311
